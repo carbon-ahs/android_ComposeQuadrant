@@ -4,14 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.axiagroups.composequadrant.presentation.component.ComposeQuadrantApp
+import com.axiagroups.composequadrant.presentation.screen.BusinessCardApp
+import com.axiagroups.composequadrant.presentation.screen.ComposeQuadrantApp
 import com.axiagroups.composequadrant.presentation.ui.theme.ComposeQuadrantTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +20,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeQuadrantTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ComposeQuadrantApp(modifier = Modifier.padding(innerPadding))
+                    //ComposeQuadrantApp(modifier = Modifier.padding(innerPadding))
+                    BusinessCardApp(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
