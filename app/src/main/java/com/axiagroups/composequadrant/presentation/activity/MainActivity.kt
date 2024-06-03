@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.axiagroups.composequadrant.presentation.screen.BusinessCardApp
 import com.axiagroups.composequadrant.presentation.screen.ComposeQuadrantApp
+import com.axiagroups.composequadrant.presentation.screen.DiceRollerApp
 import com.axiagroups.composequadrant.presentation.ui.theme.ComposeQuadrantTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +21,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeQuadrantTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    //ComposeQuadrantApp(modifier = Modifier.padding(innerPadding))
-                    BusinessCardApp(modifier = Modifier.padding(innerPadding))
+                    // ComposeQuadrantApp(modifier = Modifier.padding(innerPadding))
+                    // BusinessCardApp(modifier = Modifier.padding(innerPadding))
+                    DiceRollerApp(Modifier.padding(innerPadding))
                 }
             }
         }

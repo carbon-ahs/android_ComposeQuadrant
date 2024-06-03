@@ -59,7 +59,7 @@ fun BusinessCardApp(
                 style = MaterialTheme.typography.headlineSmall
             )
             Text(
-                text = "Kamla",
+                text = "SWE",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.SemiBold,
             )
