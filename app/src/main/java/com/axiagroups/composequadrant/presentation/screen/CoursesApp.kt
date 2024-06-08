@@ -1,7 +1,6 @@
 package com.axiagroups.composequadrant.presentation.screen
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -24,11 +23,6 @@ fun CoursesApp(modifier: Modifier = Modifier) {
         Column(
             modifier = Modifier.padding(it)
         ) {
-//            LazyColumn {
-//                items(DataSource.topics) {topic ->
-//                    TopicCard(topic = topic)
-//                }
-//            }
             LazyVerticalGrid(
                 columns = GridCells.Fixed(2),
             ) {
@@ -39,9 +33,6 @@ fun CoursesApp(modifier: Modifier = Modifier) {
                     )
                 }
             }
-
-
         }
     }
-
 }
