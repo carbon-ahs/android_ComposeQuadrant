@@ -14,7 +14,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
-import com.axiagroups.composequadrant.data.local.Datasource
+
 import com.axiagroups.composequadrant.presentation.component.AffirmationList
 
 
@@ -41,7 +41,7 @@ fun AffirmationApp(
                     .calculateEndPadding(layoutDirection)
             )
     ) {
-        AffirmationList(affirmationList = Datasource().loadAffirmations())
+//        AffirmationList(affirmationList = Datasource().loadAffirmations())
 
     }
 

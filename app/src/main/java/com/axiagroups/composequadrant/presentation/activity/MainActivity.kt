@@ -13,6 +13,7 @@ import com.axiagroups.composequadrant.presentation.screen.AffirmationApp
 import com.axiagroups.composequadrant.presentation.screen.ArtSpaceApp
 import com.axiagroups.composequadrant.presentation.screen.BusinessCardApp
 import com.axiagroups.composequadrant.presentation.screen.ComposeQuadrantApp
+import com.axiagroups.composequadrant.presentation.screen.CoursesApp
 import com.axiagroups.composequadrant.presentation.screen.DiceRollerApp
 import com.axiagroups.composequadrant.presentation.screen.LemonadeApp
 import com.axiagroups.composequadrant.presentation.screen.TipTimeApp
@@ -24,7 +25,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeQuadrantTheme {
-                AffirmationApp()
+                CoursesApp()
+//                AffirmationApp()
 //                ArtSpaceApp()
 //                TipTimeApp()
 //                LemonadeApp()
